@@ -1,0 +1,7 @@
+(fun (halve n acc)
+    (if (<= n acc)
+        n
+        (halve (sub1 n) (add1 acc))
+    )
+)
+(halve 2000000000 0)

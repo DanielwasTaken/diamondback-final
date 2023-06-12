@@ -1,0 +1,7 @@
+(fun (sumrec n acc)
+    (if (= n 0)
+        acc
+        (sumrec (sub1 n) (add1 acc))
+    )
+)
+(sumrec 1000000000 0)
